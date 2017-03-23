@@ -1,0 +1,1 @@
+# owncloud-setting_default_avatar
