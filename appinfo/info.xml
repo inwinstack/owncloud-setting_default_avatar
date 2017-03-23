@@ -10,6 +10,9 @@
     <version>0.0.1</version>
     <namespace>Setting_Default_Avatar</namespace>
     <category>other</category>
+    <types>
+        <prelogin/>
+    </types>
     <dependencies>
         <owncloud min-version="8.2" />
     </dependencies>
