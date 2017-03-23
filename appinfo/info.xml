@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<info>
+    <id>setting_default_avatar</id>
+    <name>Setting Default Avatar</name>
+    <description>
+        Setting default avatar icon.
+    </description>
+    <licence>AGPL</licence>
+    <author>Duncan Chiang</author>
+    <version>0.0.1</version>
+    <namespace>Setting_Default_Avatar</namespace>
+    <category>other</category>
+    <dependencies>
+        <owncloud min-version="8.2" />
+    </dependencies>
+</info>
