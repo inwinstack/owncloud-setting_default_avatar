@@ -11,7 +11,7 @@
     <namespace>Setting_Default_Avatar</namespace>
     <category>other</category>
     <types>
-        <postlogin/>
+        <prelogin/>
     </types>
     <dependencies>
         <owncloud min-version="8.2" />
