@@ -24,14 +24,15 @@ class UserHooks {
     public function register() {
         $loginRecord = function($user) {            
             $view = new \OC\Files\View('/'.$user->getUID());
-            $view->mkdir('preSetAvatar');
-            $view->rmdir('preSetAvatar');
             if (!$view->file_exists('avatar.png') and !$view->file_exists('avatar.jpg')){
                 if (file_exists(\OC_App::getAppPath('setting_default_avatar').'/img/avatar.png')){
-
+                    $view->mkdir('preSetAvatar');
+                    $view->rmdir('preSetAvatar');
                     $view->file_put_contents('avatar.png',file_get_contents(\OC_App::getAppPath('setting_default_avatar').'/img/avatar.png'));
                  }
                 else if(file_exists(\OC_App::getAppPath('setting_default_avatar').'/img/avatar.jpg')){
+                     $view->mkdir('preSetAvatar');
+                     $view->rmdir('preSetAvatar');
                      $view->file_put_contents('avatar.jpg',file_get_contents(\OC_App::getAppPath('setting_default_avatar').'/img/avatar.jpg'));
                      }
             }
